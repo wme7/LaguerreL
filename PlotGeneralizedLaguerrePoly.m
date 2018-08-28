@@ -19,7 +19,7 @@ set(0,'DefaultTextFontName','Times',...
 'DefaultLineMarkerSize',7.75)
 
 % 1.2 list of options for lines
-color=['c','b','g','r','m','k','y','w'];
+color=['c','b','g','r','y','m','k','w'];
 lines={'-','--',':','-.','-.','none'};
 mark=['s','+','o','x','v','none'];
 
@@ -32,7 +32,7 @@ x = -2:0.1:10; % Real range
 % 3.1 Print axis lines
 xl = line([-2 10],[0,0],'color','k');
 yl = line([0 0],[-5,10],'color','k');
-axis([-2,10,-5,10]); %grid on;
+axis([-2,10,-5,10]); grid on;
 
 % 3.2 Plot generilized Laguerre polynomials  
 figure(1); hold on
